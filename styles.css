@@ -1,0 +1,234 @@
+body{
+  width: 100%;
+  height: auto;
+  background-color: #fff8dc;
+}
+
+.container{
+  margin-top: 0;
+  background-color: #fff8dc;
+}
+.bg-img1{
+  position: relative;
+  top: 25px;
+  left: 1300px;
+  
+}
+
+.bg-img2{
+  position: relative;
+  top: 0px;
+  left: 500px;
+}
+
+.bg-img3{
+  position: relative;
+  left: 390px;
+}
+
+nav{
+  width: 100%;
+  height:100px;
+  background-color:#fff8dc;
+  display: flex;
+}
+
+.nav-1{
+  width: 50%;
+  height: 200px;
+  background-color: #fff8dc;
+}
+
+.logo{
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: 20px;
+  left: 70px;
+}
+
+.nav-2{
+  width: 50%;
+  height: 200px;
+  background-color: #fff8dc;
+  display: inline-block;
+
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content:flex-end;
+  margin: 70px 150px;
+  
+  }
+
+a{
+text-decoration: none;
+color:inherit;
+}
+
+li{
+  margin: 15px;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: rgb(211, 34, 39);
+  cursor:pointer;
+}
+
+h1{
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  color: rgb(211, 34, 39);
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+
+   /* RESET MINIMO */
+   
+
+    /* contenitore form (centrato) */
+    .container-form {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff8dc;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .contact-form {
+      width: 100%;
+    
+    }
+
+    /* riga con due campi affiancati */
+    .container-nome-cognome,
+    .container-email-numero {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+
+    /* singola form-field */
+    .form-field {
+      flex: 1;                /* occupa spazio disponibile */
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;           /* evita overflow in flexbox */
+    }
+
+    label {
+      font-size: 13px;
+      color: #333;
+      /* se vuoi nascondere il testo visuale ma mantenere accessibilità:
+         uncomment the next line e inserisci aria-label sugli input */
+      /* visibility: hidden; height: 0; overflow: hidden; */
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px 12px;
+      border: 2px solid lightgrey;
+      border-radius: 6px;
+      font-size: 14px;
+      height: 36px;
+      background: #fff;
+      outline: none;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+      padding-top: 10px;
+      
+    }
+
+    /* assicura che niente si sovrapponga: nessun top/left posizionato */
+    /* rimuoviamo position: relative che causava overlay nel tuo codice originale */
+    .form-field, input, textarea { 
+      position: static; }
+
+    /* pulsante */
+    .btn-row {
+      margin-top: 12px;
+    }
+
+    button {
+      background-color:rgb(211, 34, 39);
+      color: white;
+      border: none;
+      padding: 17px 30px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover { 
+      background-color: rgb(211, 34, 39);
+       }
+
+    /* comportamento responsive: su schermi piccoli i campi vanno uno sotto l'altro */
+    @media (max-width: 640px) {
+      .container-nome-cognome,
+      .container-email-numero {
+        flex-direction: column;
+      }
+    }
+
+.footer{
+  width: 100%;
+  height: 70px;
+  background-color: rgb(211, 34, 39);
+  display: flex;
+  position: relative;
+  top:3px;
+  left: 2px;
+
+}
+
+.foot{
+  font-family:  "Quattrocento Sans", sans-serif;
+  font-size: 23px;
+  color: white;
+  text-align: right;
+  position: relative;
+  top: 2px;
+  left:17px;
+  
+}
+
+.social-icon-fb{
+  width: 53px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  position: relative;
+  left: 1200px;
+  top: 8px;
+}
+.social-icon-ig{
+  width: 52px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  position: relative;
+  left: 1201px;
+  top: 12px;
+}
+
+.social-icon-wa{
+  width: 43px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  position: relative;
+  top:11px;
+  left: 1203px;
+  margin-left: 9px;
+}
